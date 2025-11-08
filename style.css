@@ -5,23 +5,23 @@ box-sizing: border-box;
 }
 
 :root{ 
-    --text-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
     --bg-url: url(./assets/night.gif);
     --stroke-color : rgb(255, 255, 255);
     --surface-color: rgb(255, 255, 255);
     --surface-color: rgb(255, 255, 255);
-    --hightlight-color: rgba(2, 2, 2, 0.97);
+    --hightlight-color: rgba(255, 255, 255, 0.97);
     --switch-background: url(./assets/moons-star.svg);
 }
 
 .light {
     --var-bg-url: url(./assets/gifsaku.gif);
-    --text-color: rgb(0, 0, 0);
+    --text-color: rgb(255, 255, 255);
     --stroke-color : rgb(0, 0, 0) 0.5;
     --surface-color: rgba(0, 0, 0, 0.5);
     --surface-color-hover: rgba(0, 0, 0, 0.5);
     --hightlight-color: rgba(31, 31, 31, 0.5);
-    --switch-bg: url(.);
+    --switch-bg: color (rgb(0, 0, 0) );
 }
 
 
@@ -121,11 +121,11 @@ body * {
 .light  #switch button{
     right: 0;
     left: initial ;
-    background-image: url(var(moon-star.svg)   );
+    background-image: url(var(./assets/sun.svg));
     
      width: 32px;
     height: 32px;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     border-radius: 50%;
     border: 1px solid var(--stroke-color);
 
