@@ -4,24 +4,28 @@ box-sizing: border-box;
 
 }
 
-:root{ 
-    --text-color: rgb(0, 0, 0);
-    --bg-url: url(./assets/night.gif);
-    --stroke-color : rgb(255, 255, 255);
-    --surface-color: rgb(255, 255, 255);
-    --surface-color: rgb(255, 255, 255);
-    --hightlight-color: rgba(255, 255, 255, 0.97);
-    --switch-background: url(./assets/moons-star.svg);
+:root{  
+    --var-bg-url: url(./assets/night.gif);
+    --text-color: rgb(255, 255, 255);
+    --stroke-color : rgb(0, 0, 0);
+    --surface-color: rgb(0, 0, 0);
+    --surface-color-hover: rgb(0, 0, 0);
+    --hightlight-color: rgb(0, 0, 0);
+    --switch-bg: url(./assets/moon.svg);
 }
+
+
+
+
 
 .light {
     --var-bg-url: url(./assets/gifsaku.gif);
-    --text-color: rgb(255, 255, 255);
-    --stroke-color : rgb(0, 0, 0) 0.5;
-    --surface-color: rgba(0, 0, 0, 0.5);
-    --surface-color-hover: rgba(0, 0, 0, 0.5);
-    --hightlight-color: rgba(31, 31, 31, 0.5);
-    --switch-bg: color (rgb(0, 0, 0) );
+    --text-color: rgb(0, 0, 0);
+    --stroke-color : rgb(255, 255, 255) 0.5;
+    --surface-color: rgb(255, 255, 255);
+    --surface-color-hover: rgb(255, 255, 255);
+    --hightlight-color: rgb(255, 255, 255);
+    --switch-bg: url(./assets/sun.svg);
 }
 
 
@@ -83,22 +87,22 @@ body * {
 
 }
 #switch{
-   position: relative;
+    position: relative;
    width: 32px;
-  margin-left: 150px;
-  margin-height: -40px;
- 
+   margin-left: 150px;
+   margin-height: -40px;
+
 }   
 
 
 
 
 
-#switch button{
-    background-image: url(./assets/moon-star.svg);
+ #switch button {
+
+
     width: 32px;
     height: 32px;
-    background: rgb(255, 255, 255);
     border-radius: 50%;
     border: 1px solid var(--stroke-color);
 
@@ -114,15 +118,22 @@ body * {
    top: 50%;
    right: -100%;
    z-index: 1;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
 
 }
 
+#moon { display: inline;}
+#sun {display: none;}
+.light #moon { display: none;}
+.light #sun {display: inline;}
+
+
+
 .light  #switch button{
+   background-image: var(--switch-bg);
     right: 0;
     left: initial ;
-    background-image: url(var(./assets/sun.svg));
-    
+
      width: 32px;
     height: 32px;
     background: rgb(0, 0, 0);
@@ -141,12 +152,12 @@ body * {
    top: 50%;
    right: 0;
    z-index: 1;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
 
 }
 
 #switch span{
-    display: block;
+    display: inline-block;
     width: 64px;
     height: 24px;
     background: var(--surface-color );
