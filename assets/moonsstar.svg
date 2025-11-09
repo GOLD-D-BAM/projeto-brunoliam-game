@@ -1,22 +1,7 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_1726_114)">
-<rect x="12.6222" y="2.44751" width="32" height="32" rx="16" transform="rotate(14.8009 12.6222 2.44751)" fill="white" shape-rendering="crispEdges"/>
-<path d="M29.577 22.4422L30.3434 19.5417" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M31.4103 21.3753L28.5099 20.6089" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.0815 16.3584L27.5706 18.292" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.7929 17.5807L26.8593 17.0698" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.971 24.9068C27.9515 24.9222 26.9464 24.6659 26.0588 24.1644C25.1711 23.6628 24.433 22.934 23.9202 22.0529C23.4074 21.1717 23.1383 20.1699 23.1407 19.1504C23.143 18.1308 23.4167 17.1303 23.9337 16.2515C22.9291 16.2647 21.9456 16.5409 21.081 17.0525C20.2164 17.5641 19.5009 18.2933 19.0059 19.1675C18.5108 20.0417 18.2534 21.0303 18.2593 22.0349C18.2652 23.0395 18.5343 24.025 19.0396 24.8933C19.5449 25.7616 20.2689 26.4823 21.1395 26.9837C22.01 27.4851 22.9968 27.7497 24.0014 27.751C25.006 27.7524 25.9935 27.4905 26.8654 26.9915C27.7373 26.4925 28.4633 25.7737 28.971 24.9068Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<filter id="filter0_d_1726_114" x="-3.55261" y="-3.55249" width="55.113" height="55.113" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="2"/>
-<feGaussianBlur stdDeviation="4"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1726_114"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1726_114" result="shape"/>
-</filter>
-</defs>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.5 7V4" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 5.5H12" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.5 1.5V3.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.5 2.5H9.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5436 9.53755C12.562 9.81283 11.5247 9.82185 10.5384 9.56369C9.55211 9.30553 8.65229 8.78949 7.93137 8.06857C7.21045 7.34765 6.69442 6.44783 6.43626 5.46152C6.1781 4.47522 6.18712 3.43797 6.46239 2.4563C5.49456 2.72568 4.61419 3.24394 3.90898 3.95944C3.20377 4.67495 2.69833 5.56274 2.44301 6.53438C2.18769 7.50602 2.19139 8.52759 2.45375 9.49736C2.71611 10.4671 3.22797 11.3512 3.93835 12.0616C4.64872 12.772 5.53282 13.2838 6.50259 13.5462C7.47235 13.8086 8.49393 13.8123 9.46556 13.5569C10.4372 13.3016 11.325 12.7962 12.0405 12.091C12.756 11.3858 13.2743 10.5054 13.5436 9.53755Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

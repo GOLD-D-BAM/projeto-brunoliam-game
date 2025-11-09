@@ -104,7 +104,7 @@ body * {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 1px solid var(--stroke-color);
+    border: 1px solid var(black);
 
    
    background-repeat: no-repeat;
@@ -118,7 +118,8 @@ body * {
    top: 50%;
    right: -100%;
    z-index: 1;
-    transform: translateY(-60%);
+    transform: translateY(-60%) translateX(15%);
+    transition: all 0.3s ease;
 
 }
 
@@ -130,16 +131,11 @@ body * {
 
 
 .light  #switch button{
-   background-image: var(--switch-bg);
     right: 0;
     left: initial ;
-
-     width: 32px;
-    height: 32px;
-    background: rgb(0, 0, 0);
     border-radius: 50%;
-    border: 1px solid var(--stroke-color);
-
+    border: 1px solid var(black);
+   
    
    background-repeat: no-repeat;
    background-position: center;
@@ -152,8 +148,9 @@ body * {
    top: 50%;
    right: 0;
    z-index: 1;
-    transform: translateY(-60%);
 
+    transform: translateX(-20%) translateY(-57%);
+   transition: all 0.3s ease;
 }
 
 #switch span{
