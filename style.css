@@ -31,7 +31,7 @@ box-sizing: border-box;
 
 
  .light body{
-     background-image: url(./assets/night.gif);
+     background-image: url(./assets/theme-cyber-light.png);
      background-attachment: fixed;
      background-repeat: no-repeat;
      background-position: top center;
@@ -41,13 +41,13 @@ box-sizing: border-box;
 }
 
 body{
-   background-image: url(./assets/gifsaku.gif);
+   background-image: url(./assets/theme-cyber-dark.png);
    background-attachment: fixed;
    background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
  /*valor de repeticao do fundo=,valor de posicionamento/valor de cobrir=cover!*/
-color-var(--text-color);
+color: var(--text-color);
 }
 
 body * {
@@ -90,7 +90,7 @@ body * {
     position: relative;
    width: 32px;
    margin-left: 150px;
-   margin-height: -40px;
+   margin-right: -40px;
 
 }   
 
@@ -125,8 +125,26 @@ body * {
 
 #moon { display: inline;}
 #sun {display: none;}
+
 .light #moon { display: none;}
 .light #sun {display: inline;}
+
+
+#clouds-night{display: inline;}
+#clouds-light{display: none;}
+
+.light #clouds-night{display: none;}
+.light #clouds-light{display: inline;}
+
+
+
+#clouds {
+   animation: moveClouds 60s linear infinite;
+    margin: 0 auto;
+    width: 100px;
+    transition: all 0.3s ease  ;
+
+}
 
 
 
@@ -183,10 +201,10 @@ ul li a{
     align-items: center;
     justify-content: center;
 
-    padding: 16px; 24px;
-   
-    background-color: rgb(surface-color);
-    border: 1px solid rgb(--stroke-color);
+    padding: 16px;
+
+    background-color: rgb(var(--surface-color));
+    border: 1px solid rgb(var(--stroke-color));
     border-radius: 8px;
 
     -webkit-backdrop-filter: blur(04px);
@@ -197,8 +215,6 @@ ul li a{
 
     transition: background  0.3s;
     border: 1.5px solid rgb(255, 255, 255);
-
-
 }
 
 
