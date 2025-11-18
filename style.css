@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 :root{  
-    --var-bg-url: url(./assets/night.gif);
+    --bg-url: url(./assets/theme-cyber-dark.png);
     --text-color: rgb(255, 255, 255);
     --stroke-color : rgb(0, 0, 0);
     --surface-color: rgb(0, 0, 0);
@@ -19,7 +19,7 @@ box-sizing: border-box;
 
 
 .light {
-    --var-bg-url: url(./assets/gifsaku.gif);
+    --bg-url: url(./assets/theme-cyber-light.png);
     --text-color: rgb(0, 0, 0);
     --stroke-color : rgb(255, 255, 255) 0.5;
     --surface-color: rgb(255, 255, 255);
@@ -31,7 +31,7 @@ box-sizing: border-box;
 
 
  .light body{
-     background-image: url(./assets/theme-cyber-light.png);
+     background-image: var(--bg-url);
      background-attachment: fixed;
      background-repeat: no-repeat;
      background-position: top center;
@@ -41,7 +41,7 @@ box-sizing: border-box;
 }
 
 body{
-   background-image: url(./assets/theme-cyber-dark.png);
+   background-image: var(--bg-url);
    background-attachment: fixed;
    background-repeat: no-repeat;
   background-position: top center;
@@ -278,3 +278,12 @@ footer{
 
 } 
 
+
+@media (max-width: 1541px) {
+  :root {
+   --bg-url: url(./assets/cyber-desktop-night.png);}
+
+  .light {
+--bg-url: url(./assets/cyber-desktop-light.jpg);
+}
+}
