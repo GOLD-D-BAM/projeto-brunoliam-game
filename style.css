@@ -279,7 +279,7 @@ footer{
 } 
 
 
-@media (max-width: 1541px) {
+@media (max-width: 2400px) {
   :root {
    --bg-url: url(./assets/cyber-desktop-night.png);}
 
