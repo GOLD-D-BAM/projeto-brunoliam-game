@@ -141,11 +141,11 @@ body * {
 
 @keyframes cloudsMove {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  to { transform: translateX(-100%); }
 }
 
 #clouds {
-  margin: 0 auto;
+  margin: auto;
   width: 100px;
   animation: cloudsMove 10s linear infinite;
 }
@@ -285,6 +285,6 @@ footer{
    --bg-url: url(./assets/night-desktop.png);}
 
   .light {
---bg-url: url(./assets/cyber-desktop-light.jpg);
+--bg-url: url(./assets/light-2-desktop.png);
 }
 }
