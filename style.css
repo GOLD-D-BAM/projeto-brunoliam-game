@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 :root{  
-    --bg-url: url(./assets/theme-cyber-dark.png);
+    --bg-url: url(./assets/night-mobile.png);
     --text-color: rgb(255, 255, 255);
     --stroke-color : rgb(0, 0, 0);
     --surface-color: rgb(0, 0, 0);
@@ -30,9 +30,10 @@ box-sizing: border-box;
 
 
 
- .light body{
+ 
+  body .light {
      background-image: var(--bg-url);
-     background-attachment: fixed;
+     background-attachment: scroll;
      background-repeat: no-repeat;
      background-position: top center;
     background-size: cover;
@@ -42,7 +43,7 @@ box-sizing: border-box;
 
 body{
    background-image: var(--bg-url);
-   background-attachment: fixed;
+   background-attachment: scroll;
    background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -138,17 +139,17 @@ body * {
 .light #clouds-light{display: inline;}
 
 
-
-#clouds {
-
-    margin: 0 auto;
-    width: 100px;
-    @keyframes cloudsMove {
+@keyframes cloudsMove {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
 
+#clouds {
+  margin: 0 auto;
+  width: 100px;
+  animation: cloudsMove 10s linear infinite;
 }
+
 
 
 
@@ -279,9 +280,9 @@ footer{
 } 
 
 
-@media (max-width: 2400px) {
+@media (min-width: 769px) {
   :root {
-   --bg-url: url(./assets/cyber-desktop-night.png);}
+   --bg-url: url(./assets/night-desktop.png);}
 
   .light {
 --bg-url: url(./assets/cyber-desktop-light.jpg);
