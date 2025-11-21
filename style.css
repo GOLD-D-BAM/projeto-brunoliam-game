@@ -33,7 +33,7 @@ box-sizing: border-box;
  
   body .light {
      background-image: var(--bg-url);
-     background-attachment: scroll;
+     background-attachment: flex;
      background-repeat: no-repeat;
      background-position: top center;
     background-size: cover;
@@ -43,7 +43,7 @@ box-sizing: border-box;
 
 body{
    background-image: var(--bg-url);
-   background-attachment: scroll;
+   background-attachment: flex;
    background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -280,7 +280,7 @@ footer{
 } 
 
 
-@media (min-width: 769px) {
+@media (min-width: 1080px) {
   :root {
    --bg-url: url(./assets/night-desktop.png);}
 
