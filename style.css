@@ -3,14 +3,17 @@ margin: 0;
 box-sizing: border-box;
 
 }
+* {
+  font-family: "Pixelify Sans", sans-serif !important;
+}
 
 :root{  
-    --bg-url: url(./assets/night-mobile.png);
+    --bg-url: url(./assets/mine-bg-ddesktop-dark.png);
     --text-color: rgb(255, 255, 255);
     --stroke-color : rgb(0, 0, 0);
     --surface-color: rgb(0, 0, 0);
     --surface-color-hover: rgb(255, 255, 255);
-    --hightlight-color: rgb(0, 0, 0);
+    --hightlight-color: rgb(88, 105, 100);
     --switch-bg: url(./assets/moon.svg);
 }
 
@@ -19,12 +22,12 @@ box-sizing: border-box;
 
 
 .light {
-    --bg-url: url(./assets/theme-cyber-light.png);
+    --bg-url: url(./assets/mine-bg-desktop-light.png);
     --text-color: rgb(0, 0, 0);
     --stroke-color : rgb(255, 255, 255) 0.5;
     --surface-color: rgb(255, 255, 255);
     --surface-color-hover: rgb(0, 0, 0);
-    --hightlight-color: rgb(255, 255, 255);
+    --hightlight-color: rgb(88, 105, 100);
     --switch-bg: url(./assets/sun.svg);
 }
 
@@ -32,7 +35,7 @@ box-sizing: border-box;
 
  
   body .light {
-     background-image: var(--bg-url);
+ 
      background-size: cover;
      background-attachment: fixed;
      background-repeat: no-repeat;
@@ -42,6 +45,7 @@ box-sizing: border-box;
 }
 
 body{
+
    background-image: var(--bg-url);
    background-size: cover;
    background-attachment: fixed;
@@ -95,8 +99,7 @@ body * {
 
 }   
 
-
-
+#switch button:hover{outline:5px solid var(--surface-color) ;}   
 
 
  #switch button {
@@ -206,7 +209,7 @@ ul li a{
 
     padding: 16px;
 
-    background-color: rgb(var(--surface-color));
+    background-color: rgb(var(--hightlight-color));
     border: 1px solid rgb(var(--stroke-color));
     border-radius: 8px;
 
@@ -222,7 +225,7 @@ ul li a{
 
 
 ul li a:hover {
-    background: var(--surface-color, 0.5);
+    background: var(--hightlight-color, 0.5);
     border: 1.5px solid var(--surface-color-hover);
     color: var(--text-color)
 
@@ -280,9 +283,9 @@ footer{
 
 @media (min-width: 1080px) {
   :root {
-   --bg-url: url(./assets/night-desktop.png);}
+   --bg-url: url(./assets/mine-bg-dark.png);}
 
   .light {
---bg-url: url(./assets/light-2-desktop.png);
+--bg-url: url(./assets/mine-bg-light.png);
 }
 }
