@@ -16,3 +16,12 @@ if (html.classList.contains('light'))
 }
 
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const item = document.getElementById("tnt");
+
+  item.addEventListener("animationend", () => {
+    item.style.display = "none"; // Faz desaparecer
+  });
+});
+

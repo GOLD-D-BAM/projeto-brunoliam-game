@@ -1,3 +1,11 @@
+/*
+CSS -1
+ID- e o identificador de um cod, que pode ser usado dentro do css, após add uma ID, no css  "#" serve como seletor do ID criado. no HTML.
+
+<link rel="stylesheet" href="style.css"> comando de seletor der arquivos da pasto do html. 
+
+*/
+
 *{ padding: 0;
 margin: 0;
 box-sizing: border-box;
@@ -6,7 +14,7 @@ box-sizing: border-box;
 
 
 :root{  
-    --bg-url: url(./assets/mine-bg-ddesktop-dark.png);
+    --bg-url: url(./assets/mine_dark.png);
     --text-color: rgb(255, 255, 255);
     --stroke-color : rgb(0, 0, 0);
     --surface-color: rgb(0, 0, 0);
@@ -20,7 +28,9 @@ box-sizing: border-box;
 
 
 .light {
-    --bg-url: url(./assets/mine-bg-desktop-light.png);
+    keyframes: lightMode 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+    --bg-url: url(./assets/imagem_light\ mine.png);/*backgroundimage: URL{nome da pasta/e arquivoo}*/
     --text-color: rgb(0, 0, 0);
     --stroke-color : rgb(255, 255, 255) 0.5;
     --surface-color: rgb(255, 255, 255);
@@ -29,11 +39,14 @@ box-sizing: border-box;
     --switch-bg: url(./assets/sun.svg);
 }
 
-
+/*a ultima sempre sera a priorizada  no css.*/
 
  
   body .light {
- 
+    /*
+body { background: black; - para colocar  uma cor de fundo, sempre junto de uma propriedade :red; ou  especifica no caso.
+*/
+     background-image: var(--bg-url);
      background-size: cover;
      background-attachment: fixed;
      background-repeat: no-repeat;
@@ -58,7 +71,11 @@ body * {
    -webkit-text-stroke-color: azure;
     font-size: 20px;
 }
+
 #box-1{ 
+    /*
+em cada caixa uma bordar, e tudo que for posta dentro dessa caixa ira aumentando com ela.nunca a passando.
+*/
     width: 100%;
     max-width: 580px;
     margin: 58px auto 0px;
@@ -66,15 +83,74 @@ body * {
    
 }
 
+#tnt {
+    
+   text-align: center;
+    animation: tnt 3s linear;
+}
+
+@keyframes tnt {
+  0% { transform: translateY(calc(-50vw + -100px)); }
+  100% { transform: translateY(500px); }
+}/*keyframes de animação do tnt caindo,key frames e usado para deixar uma imagem ou 
+objeto animado,basta vc colocar a direcão dessejada do objeto que vc quer animar 
+direções usadas y,z,x,w*/
+
+#tnt img{
+    position: 1500px;
+    border-radius: 0%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100px;
+    
+}
+#explosion img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#explosion {
+    pointer-events: none; /* para não interferir na interação do usuário */
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  opacity: 0;
+  animation: aparecerDesaparecer 3s forwards; 
+  animation-delay: 3s; /* espera antes de tudo começar */
+  animation-iteration-count: 1; /* NÃO repete */
+}
+
+/* 0% = invisível
+   20% = aparece
+   80% = fica visível
+   100% = some */
+@keyframes aparecerDesaparecer {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+  /* keyframes para fazer a explosão aparecer e desaparecer,pode ser usado uma opacidade, para fazer aparecer
+  e desaparecer o item desejado quantas vezes vc quiser. so basta por q quantidade desejada!  */
+}
+
+
 #box-2 {
-    img { border-radius: 50%; border: 2px solid rgb(0, 0, 0);} 
-    text-align: center;
-    padding: 24px; 
+    
+   text-align: center;
     
     
 }
 
 #box-2 img{
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
     width: 112px;
 
 
@@ -284,7 +360,7 @@ footer{
    --bg-url: url(./assets/mine-bg-dark.png);}
 
   .light {
---bg-url: url(./assets/mine-bg-light.png);
+--bg-url: url(./assets/mine-bg-desktop.png);
 }
 }
 * {
