@@ -28,8 +28,7 @@ box-sizing: border-box;
 
 
 .light {
-    keyframes: lightMode 0.3s ease-in-out;
-    animation-fill-mode: forwards;
+
     --bg-url: url(./assets/imagem_light\ mine.png);/*backgroundimage: URL{nome da pasta/e arquivoo}*/
     --text-color: rgb(0, 0, 0);
     --stroke-color : rgb(255, 255, 255) 0.5;
@@ -50,20 +49,24 @@ body { background: black; - para colocar  uma cor de fundo, sempre junto de uma 
      background-size: cover;
      background-attachment: fixed;
      background-repeat: no-repeat;
-     background-position: top center;
+     background-position: center;
  /*valor de repeticao do fundo=,valor de posicionamento/valor de cobrir=cover!*/
      color: var(--text-color);
 }
+/* o body e a tag que envolve todo o conteudo do html, então tudo que for colocado dentro do body, ira receber as propriedades do body
 
+text-align: center/ para centralizar
+text-right:  param deixar full direita
+text-left: pra deixar full esquerda
+*/
 body{
-
-   background-image: var(--bg-url);
-   background-size: cover;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-  background-position: top center;
+     background-image: var(--bg-url);
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+    background-position: center;
  /*valor de repeticao do fundo=,valor de posicionamento/valor de cobrir=cover!*/
-color: var(--text-color);
+     color: var(--text-color);
 }
 
 body * {
@@ -78,7 +81,9 @@ em cada caixa uma bordar, e tudo que for posta dentro dessa caixa ira aumentando
 */
     width: 100%;
     max-width: 580px;
-    margin: 58px auto 0px;
+    margin: 58px auto 0px; /*  margin: auto;= somete largura,geralmente no css, não se configura altura. somente a largura.
+    margin: 56px auto 0px auto;= ele usa de forma automática os seletor, right,botton,top,left. em um so comando, vc selcionando os PX. e auTo.
+*/
     padding: 24px;
    
 }
@@ -141,7 +146,11 @@ direções usadas y,z,x,w*/
 }
 
 
-#box-2 {
+#box-2 {/*
+então para centralizar algo, necessário a criação do pai da div, e codificando.
+ sera possível a a centralização do algo dentro da div pai
+*/
+    margin-top: 24px;
     
    text-align: center;
     
@@ -252,7 +261,9 @@ direções usadas y,z,x,w*/
 }
 
 #switch span{
-    display: inline-block;
+    display: inline-block; /*dsiplay-block funciona jogando o texto para ocupar tosdas a linha a baixo fazendo uma linha na vertical.
+    dsiplay-line, ele ocupa toda caixa em formato da linh na vertical.*/
+
     width: 64px;
     height: 24px;
     background: var(--surface-color );
@@ -365,4 +376,28 @@ footer{
 }
 * {
   font-family: "Pixelify Sans", sans-serif !important;
+}
+
+
+/*  Ajuste do fundo especificamente para CELULAR */
+@media (max-width: 600px) {
+  body {
+    background-position: center;
+    background-size: contain; /* impede de cortar a imagem */
+    background-repeat: no-repeat;
+    background-color: #000; /* evita espaço branco atrás */
+  }
+
+  #box-1 {
+    margin-top: 20px;
+    padding: 16px;
+  }
+
+  #box-2 img {
+    width: 90px;
+  }
+
+  ul li a {
+    padding: 14px;
+  }
 }
