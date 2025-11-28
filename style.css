@@ -14,7 +14,7 @@ box-sizing: border-box;
 
 
 :root{  
-    --bg-url: url(./assets/mine_dark.png);
+    --bg-url: url(./assets/night_mobile_mine.png);/*backgroundimage: URL{nome da pasta/e arquivoo}*/
     --text-color: rgb(255, 255, 255);
     --stroke-color : rgb(0, 0, 0);
     --surface-color: rgb(0, 0, 0);
@@ -29,7 +29,7 @@ box-sizing: border-box;
 
 .light {
 
-    --bg-url: url(./assets/imagem_light\ mine.png);/*backgroundimage: URL{nome da pasta/e arquivoo}*/
+    --bg-url: url(./assets/light_mobile_mine.png);/*backgroundimage: URL{nome da pasta/e arquivoo}*/
     --text-color: rgb(0, 0, 0);
     --stroke-color : rgb(255, 255, 255) 0.5;
     --surface-color: rgb(255, 255, 255);
@@ -90,57 +90,58 @@ body * {
     /*
 em cada caixa uma bordar, e tudo que for posta dentro dessa caixa ira aumentando com ela.nunca a passando.
 */
-    width: 100%;
-    max-width: 580px;
-    margin: 58px auto 0px; /*  margin: auto;= somete largura,geralmente no css, não se configura altura. somente a largura.
+
+     max-width: 580px;
+     width: 100%;
+     margin: 58px auto 0px; /*  margin: auto;= somete largura,geralmente no css, não se configura altura. somente a largura.
     margin: 56px auto 0px auto;= ele usa de forma automática os seletor, right,botton,top,left. em um so comando, vc selcionando os PX. e auTo.
 */
-    padding: 24px;
+     padding: 24px;
    
 }
 
 #tnt {
     
-   text-align: center;
-    animation: tnt 3s linear;
+     text-align: center;
+     animation: tnt 3s linear;
 }
 
 @keyframes tnt {
-  0% { transform: translateY(calc(-50vw + -100px)); }
-  100% { transform: translateY(500px); }
+     0% { transform: translateY(calc(-50vw + -100px)); }
+     100% { transform: translateY(500px); }
 }/*keyframes de animação do tnt caindo,key frames e usado para deixar uma imagem ou 
 objeto animado,basta vc colocar a direcão dessejada do objeto que vc quer animar 
 direções usadas y,z,x,w*/
 
 #tnt img{
-    position: 1500px;
-    border-radius: 0%;
-    border: 2px solid rgb(0, 0, 0);
-    width: 100px;
+     position: 1500px;
+     border-radius: 0%;
+     border: 2px solid rgb(0, 0, 0);
+     width: 100px;
     
 }
 #explosion img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+     width: 100%;
+     height: 100%;
+    object-fit: cover;
 }
 
 #explosion {
-    pointer-events: none; /* para não interferir na interação do usuário */
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
+     pointer-events: none; /* para não interferir na interação do usuário */
+     display: flex;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     z-index: 9999;
 
-  opacity: 0;
-  animation: aparecerDesaparecer 3s forwards; 
-  animation-delay: 3s; /* espera antes de tudo começar */
-  animation-iteration-count: 1; /* NÃO repete */
+     opacity: 0;
+     animation: aparecerDesaparecer 3s forwards; 
+    animation-delay: 3s; /* espera antes de tudo começar */
+     animation-iteration-count: 1; /* NÃO repete */
 }
 
 /* 0% = invisível
