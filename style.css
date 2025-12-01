@@ -260,11 +260,7 @@ então para centralizar algo, necessário a criação do pai da div, e codifican
 .light #sun {display: inline;}
 
 
-#clouds-night{display: inline;}
-#clouds-light{display: none;}
 
-.light #clouds-night{display: none;}
-.light #clouds-light{display: inline;}
 
 
 @keyframes cloudsMove {
@@ -277,14 +273,8 @@ então para centralizar algo, necessário a criação do pai da div, e codifican
 
 }
 
-#clouds {
-  opacity: 0%;
-  margin: auto;
-  width: 100px;
-  animation: cloudsMove 30s linear infinite;
-  animation-delay: 10s; /* espera antes de tudo começar */
 
-}
+
 
 
 .light  #switch button{
